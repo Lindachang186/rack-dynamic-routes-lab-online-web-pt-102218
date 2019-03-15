@@ -8,6 +8,7 @@ class Application
 
     if req.path =="/items/"
       @@items.find do |item|
+        binding.pry
         resp.write item.price
       end
     else
